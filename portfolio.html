@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio.harsh</title>
+  <link rel="stylesheet" href="portfolio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+       <img src="port.webp" id="logo3" width="90"  >
+        <div class="menu" id="sidemenu">
+          <ul id="list">
+            <li> <a href="#header">Home</a></li>
+            <li> <a href="#about">About</a></li>
+            <li> <a href="#services">Services</a></li>
+            
+            <li> <a href="#contact">contact</a></li>
+          </ul>
+          <div class="toggle-btn" id="btn">
+            <span id="btnText">Light</span>
+            <i class="fa-solid fa-sun" id="btnIcon"></i>
+          </div>
+           <i class="fa-solid fa-xmark bars " onclick="closemenu();"></i>
+        </div>
+        <i class="fa-solid fa-bars bars " onclick="openmenu();"></i>
+      </nav>
+      </div>
+  </div>
+     <div class="content-section">
+      <div class="container">
+        <div class="row1">
+          <div class="left-content ">
+          
+          <h1>
+            Hello, I'm <span>RIDDHI</span><br> From India
+          </h1>
+          <P>A Frontend Devloper</P>
+          <a href="my_image.jpg" download class="btn1 btn2"> Download CV</a>
+        </div>
+        <div class="right-content ">
+          <img src="my_image.jpg" >
+          <!-- <div class="color-box"></div> -->
+        </div>
+        </div>
+        
+      </div>
+     </div>
+
+    </div>
+  </div>
+  <!---------about-------->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <!-- <div class="about-col-1">
+          <img src="MyIMAGE.png">
+        </div> -->
+        <div class="about-col-2">
+         <h1 class="sub-title">ABOUT ME</h1>
+         <p>Hello there! I'm RIDDHI, a student at JSPM's Bhivarabai Sawant Institute of Technology and Research with a passion for Development. With a keen eye for Web Development, I thrive on transforming creative ideas into tangible, impactful Web projects. Away from the screen, my hobbies are, playing badminton, reading fictional books and spending time with pets. Let's connect and explore how we can bring your ideas to life!</p>
+        <div class="tab-title">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Frontend Development</span><br>Desigining web user interface</li>
+            <li><span>Programming Languages</span><br>Designing projets using java and python</li>
+            <li><span>Database Management</span><br>MySql and MongoDB</li>
+          </ul>
+        </div>
+        
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>SSC</span><br>Maharashtra State Board</li>
+            <li><span>HSC</span><br>Maharashtra State Board</li>
+            <li><span>Graduation(BE)</span><br>SPPU</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-----services-->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title2"> My <span class="service">services</span></h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>I excel in frontend development by crafting seamless, user-centric interfaces with a keen eye for design and optimal user experience. Proficient in HTML, CSS, and JavaScript.</p>
+         <!-- <a href="#"><button class="learnmore">Learn more</button></a> -->
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>Video Editing</h2>
+          <p>I bring video narratives to life with precision and creativity, seamlessly weaving together visuals, sound, and effects to engage audiences. </p>
+          <!-- <a href="#"><button class="learnmore">Learn more</button></a> -->
+        </div>
+        <div>
+          <i class="fa-solid fa-crop-simple"></i>
+          <h2>Content Writing</h2>
+          <p>I do content writing, such as writing descriptions and suggesting ideas for the YouTube videos</p>
+          <!-- <a href="#"><button class="learnmore">Learn more</button></a> -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me
+          </h1>
+          <p> <i class="fa-solid fa-paper-plane"></i> riddhiwaghmode@gmail.com </p>
+          <p><i class="fa-solid fa-square-phone"></i> 0123456789</p>
+          <div class="social-icons">
+            
+            <a href="https://www.linkedin.com/in/riddhi-waghmode-413148253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="Message" rows="6" placeholder="your Message"></textarea>
+            <button type="submit" class="btn1 btn3">submit</button>
+          </form>
+          
+
+        </div>
+       
+      </div>
+      <a href="#header" class="move-up"><i class="fa-solid fa-arrow-up-from-bracket"></i></a>
+    </div>
+    <div class="copyright">
+      <p> copyright © Riddhi 2024</p>
+      <p>All Rights Reserved</p>
+      
+    </div>
+  </div>
+  
+
+  <script src="portfolio.js">
+   
+  </script>
+  
+</body>
+</html>
